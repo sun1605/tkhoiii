@@ -1,0 +1,13 @@
+h2 /* tên thẻ */
+{
+    color: burlywood;
+}
+
+#title /* id */
+{
+    color:aqua;
+}
+.title2 /* class */
+{
+    color: azure;
+}

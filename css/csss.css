@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../Font/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+.Txt-center{
+    text-align: center;
+}
+.Text-center {
+    color: black;
+    font-family: Roboto;
+    text-align: center;
+}
+b
+{
+    color: red;
+}
+ul{ 
+    list-style-type: none;  /*bỏ đi chấm tròn */
+    
+    height: 100px; /*Chiều cao background */
+    background-color: yellow; /*Màu background */
+    text-align: center;
+}
+li{
+    display: inline; /*các thẻ li  nằm trên 1 dòng */
+    line-height: 100px; /*Tăng khoảng cách giữa các tên thẻ li*/
+    font-size: 50px; /*Tăng kích thước chữ*/
+    padding: 10px 50px;/*Tăng khoảng cách giữa các li*/
+    text-align: center;
+}
+    

@@ -1,0 +1,92 @@
+/* Import font mềm mại */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* Nền gradient lung linh */
+body {
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #ffdde1, #fcb69f);
+    background-size: 400% 400%;
+    text-align: center;
+    padding: 50px;
+    color: white;
+    animation: gradientBG 8s ease infinite, fadeIn 1.5s ease-in-out;
+}
+
+/* Hiệu ứng nền đổi màu */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Hiệu ứng fade-in cho toàn bộ trang */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Container của nội dung */
+.form-container {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    width: 80%;
+    max-width: 500px;
+    animation: slideIn 1.5s ease-in-out;
+    backdrop-filter: blur(10px);
+}
+
+/* Hiệu ứng slide-in cho container */
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Tiêu đề */
+h2 {
+    color: #ff1493;
+    font-size: 28px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Đoạn văn */
+p {
+    color: #333;
+    font-size: 18px;
+}
+
+/* Nút bấm */
+button {
+    background-color: #ff69b4;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
+}
+
+/* Hiệu ứng hover cho nút */
+button:hover {
+    background-color: #ff1493;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(255, 20, 147, 0.5);
+}
+
+/* Hiệu ứng cho trang lời chúc */
+.loichuc {
+    font-size: 22px;
+    animation: textFade 2s ease-in-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes textFade {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
